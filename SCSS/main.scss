@@ -1,0 +1,37 @@
+@import './functions';
+@import './mixins';
+@import './resets';
+@import './variables';
+
+body {
+    background-color: $light-blue;
+    font-family: $mont;
+    font-weight: weight(regular);
+    letter-spacing: 1px;
+}
+
+// Header
+.header {
+    padding: 40px;
+    background-color: $secondary-blue;
+}
+
+// Footer
+.footer {
+    font-weight: weight(bold);
+    background-color: $dark-gray;
+    @include fixed(bottom);
+
+    p {
+        padding: 13px 10px 10px 10px;
+        color: $light-yellow;
+
+        a {
+            color: $light-gray;
+
+            &:hover {
+                color: $light-blue;
+            }
+        }
+    }
+}

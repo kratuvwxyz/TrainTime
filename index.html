@@ -1,320 +1,93 @@
 <!doctype html>
-
-<!--
-
-        ╥ DESIGNED AND DEVELOPED BY...
-        ║ 
-        ║   /       ───
-        ║ ╓──╖ ╓───────╖ ╓╖ ╓───╖ ╓───╖ TM
-        ║ ║  ║ ║       ║ ╙╜ ║   ║ ║   ║  
-    ╓───╫─╫──╜ ╙──╖ ╓──╫──╖ ║   ║ ║   ║
-    ║   ║ ║       ║ ║  ║  ║ ║   ║ ║   ║
-    ║   ║ ╙───────╜ ╙──╜  ║ ╙───╫─╜   ║ 
-    ║   ║ SINCE 20ELEVEN  ║     ║     ╙ LLC © HTTPS://DESAIGN.APP 
-    ╙───╜                 ╙─────╜             ALL RIGHTS RESERVED
-  
--->
-
-<html dir="ltr" lang="en-US">
-
-<!--=============================================-->
-<!--=============================================-->
-<!--=============================================-->
+<html lang="en">
 
 <head>
-
-    <!--:::::::::::::::::::::::::::::::::::::::
-  Required meta tags
-::::::::::::::::::::::::::::::::::::::::-->
-
+    <title>Title</title>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <!--just for auto-refresh or redirect use the following meta tag-->
-    <meta http-equiv="refresh" content="300" />
-    <!--<meta http-equiv="refresh" content="0; url=http://website.com/" />-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="#DESAIGNER" />
-    <meta name="description" content="#" />
-    <meta name="keywords" content="#" />
-    <link rel="shortcut icon" type="image/gif" href="https://raw.githubusercontent.com/kratuvwxyz/assets2/master/images/favicon.gif" />
 
-    <!--:::::::::::::::::::::::::::::::::::::::
-  Stylesheets
-::::::::::::::::::::::::::::::::::::::::-->
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="" crossorigin=""> -->
 
-    <!--Reset CSS-->
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/kratuvwxyz/assets2/tree/master/css/reset.css">
+    <link rel="stylesheet" href="assets/css/SolariBoard.css" type="text/css">
 
-    <!--Other CSS-->
-
-    <!--W3.CSS-->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!--++++++-->
-    <!--BootStrap CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!--++++++-->
-
-    <!--Awesome Fonts Library-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--++++++-->
-
-    <!--Developer CSS-->
-    <!--STYLE CSS-->
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-image: url('');
-            background-color: whitesmoke;
-            letter-spacing: 1px;
-        }
-        
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: 'IBM Plex Serif', serif;
-        }
-        
-        footer {
-            background-image: url(https://raw.githubusercontent.com/kratuvwxyz/assets2/master/images/background/pattern/confectionary.png);
-            background-color: khaki;
-		}
-		#viewport{left: 0; top: 0; right: 0; bottom: 0; }
-		#container{left: 0; top: 0; right: 0; bottom: 0; font-family: 'Oswald', sans-serif; }
-
-    </style>
-    <!--++++++-->
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
-	
-	<link rel="stylesheet" href="assets/css/SolariBoard.css" type="text/css">
-
-    <!--:::::::::::::::::::::::::::::::::::::::
-  JavaScript
-::::::::::::::::::::::::::::::::::::::::-->
     <!--jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!--++++++-->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="" crossorigin=""></script>
 
-	<!-- Firebase Reference -->
-	<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
-	<!-- Moment.js Reference -->
-	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+    <!-- Moment.js Reference -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
-	<script src="assets/js/SolariBoard.min.js"></script>
-    <!--:::::::::::::::::::::::::::::::::::::::
-  Document Title
-::::::::::::::::::::::::::::::::::::::::-->
+    <script src="assets/js/SolariBoard.min.js"></script>
 
-<title>Anytime is Train Time</title>
+    <!-- SASS Generates CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
 
 </head>
 
-<!--=============================================-->
-<!--=============================================-->
-<!--=============================================-->
+<body>
 
-<body class="bg-secondary">
-
-		<div class="container-fluid sticky-top bg-secondary border-bottom border-info p-3 pb-5">
-			<!-- <h1 class="text-info">ANYTIME IS <span class="text-danger">TRAIN TIME</span></h1> -->
-			<div id="viewport" class="displayBase p-3">
-				<div id="container" ></div>
-			</div>
-		</div>
-	<div class="container">
-		<div class="row p-4 pt-5 bg-light">
-			<div class="col-lg-12">
-				<div class="p-4 bg-dark text-light">
-					<div class="card-heading">
-						<h3 class="card-title">
-							<strong>Current Train Schedule</strong>
-						</h3>
-					</div>
-					<div class="card-body">
-						<table class="table table-hover" id="train-table">
-							<thead>
-								<tr>
-									<th>Train Name</th>
-									<th>Destination</th>
-									<th>Frequency (min)</th>
-									<th>Next Arrival</th>
-									<th>Minutes Away</th>
-								</tr>
-							</thead>
-							<tbody>
-							
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-			
-			<!--Add Train-->
-			<div class="p-5 col-lg-12">
-				<div class="card-heading">
-					<h3 class="card-title">
-						<strong>Add Train</strong>
-					</h3>
-				</div>
-				<div class="card-body">
-					<form action="">
-						<div class="form-group row">
-							<label for="train-name-input">Train Name</label>
-							<input type="text" id="train-name-input" class="form-control">
-						</div>
-						<div class="form-group row">
-							<label for="destination-input">Destination</label>
-							<input type="text" id="destination-input" class="form-control">
-						</div>
-						<div class="form-group row">
-							<label for="first-train-input">First Train Time (military)</label>
-							<input type="text" id="first-train-input" class="form-control">
-						</div>
-						<div class="form-group row">
-							<label for="frequency-input">Frequency (min)</label>
-							<input type="text" id="frequency-input" class="form-control">
-						</div>
-						<button class="btn" id="add-train-btn" type="submit">Submit</button>
-					</form>
-				</div>
-			</div>
-			
-			
-		</div>
-		
-	</div>  
-    <!--:::::::::::::::::::::::::::::::::::::::
-  Footer
-::::::::::::::::::::::::::::::::::::::::-->
-<br><br><br><br><br><br><br><br><br>
-
-<section id="footerSection">
-
-    <footer class="w3-container w3-bottom w3-topbar w3-border-dark-gray w3-khaki" id="footerCopyright">
-
-        <!--links-->
-        <div id="footerLinks" class="w3-padding-16">
-            <a href="https://github.com/kratuvwxyz/TrainTime" target="_blank"><i class="fa fa-github w3-btn" style="font-size:25px;color: #bd2c00;"></i></a> |
-            <a href="https://linkedin.com/in/desaignstudio" target="_blank"><i class="fa fa-linkedin-square w3-btn" style="font-size:25px;color: #0077b5;"></i></a> |
-            <a href="index.html" class="w3-text-dark-gray w3-btn">#TrainTimer</a>
+    <div class="menu"></div>
+    <div class="header">
+        <div id="viewport" class="displayBase">
+            <div id="container"></div>
         </div>
+    </div>
+    <div class="main"></div>
+    <div class="footer">
+        <p>POWREDED BY <a href="http://desaign.studio" target="_blank" rel="noopener noreferrer">DESAIGN.STUDIO</a></p>
+    </div>
 
-        <!--logo-->
-        <div id="logoCopyright" class="w3-row w3-display-container w3-padding-24">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="" crossorigin=""></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="" crossorigin=""></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="" crossorigin=""></script>
+ -->
+    <!-- Developer JavaScript -->
+    <script src="assets/js/main.js"></script>
 
-            <img src="https://kratuvwxyz.github.io/assets/images/footer/DESAIGNLLC.svg" alt="desaign llc" height="60" border="none" style="padding-bottom: 5px;" />
+    <!-- font SolariDisplay -->
+    <script>
 
-            <span class="w3-display-bottom" style="white-space: nowrap; font-size: 12px; line-height: 20px; letter-spacing: 1px; color: #34495e; vertical-align: bottom;">&#160;&copy; 2011-<script type="text/javascript">var d = new Date();document.write(d.getFullYear());</script> <a href="http://desaign.studio" style="color:#e74c3c; text-decoration: underline; vertical-align: bottom;" target="_blank" >DESAIGN.STUDIO</a> All Rights Reseverd.</span>
+        'use strict'
 
-            <!--plog number-->
-            <div id="plog" class="w3-bottom w3-khaki" style="z-index: 99999"><span class="w3-display-bottomright w3-padding-small w3-margin-right w3-opacity" style="font-size: 10px;">XXXXX</span></div>
+        var display;
 
-        </div>
+        window.requestAnimationFrame = window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame;
 
-    </footer>
+        window.addEventListener('load', function () {
 
-    <script type="text/javascript">
+            display = new CTR.SolariBoard({
+                container: container,
+                format: [
+                    CTR.SOLARIVALUES.letter,
+                    CTR.SOLARIVALUES.letter,
+                    CTR.SOLARIVALUES.letter,
+                    CTR.SOLARIVALUES.letter,
+                    CTR.SOLARIVALUES.letter,
+                    CTR.SOLARIVALUES.letter,
+                    CTR.SOLARIVALUES.letter,
+                    CTR.SOLARIVALUES.letter,
+                    CTR.SOLARIVALUES.letter,
+                    CTR.SOLARIVALUES.letter,
+                    CTR.SOLARIVALUES.letter
+                ],
+                segmentWidth: 40,
+                segmentHeight: 40,
+                fontSize: 40
+            });
 
-      $(function(){
-        $('#logoCopyright').hide();
-        if($(document).height() < $(window).height()){
-            $('#logoCopyright').show();
-        }
-        $(window).resize(function(){
-          if($(document).height() > $(window).height()){
-                $('#logoCopyright').slideUp('slow');
-            }
-            else{
-                $('#logoCopyright').slideDown('slow');
-            }
-        });
-    });
+            display.setContent('TRAIN TIMER');
 
-    $(window).scroll(function(){        
-        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 0)
-        {
-                $('#logoCopyright').slideDown('slow');
-        }
-        else
-        {
-                $('#logoCopyright').slideUp('slow');
-        }
-    });
+        }, false);
 
-    $(document).ready(function() {
-        if ($(window).height() >= $(document).height() )
-        {
-            $('#logoCopyright').data('size','hide');
-        }
-        else
-        {
-            $('#logoCopyright').data('size','show');
-        }
-    });
 
-      $(".w3-btn").hover(function() {
-          $(this).css("box-shadow", "none");
-      });
     </script>
 
-</section>
-
-
-    <!--:::::::::::::::::::::::::::::::::::::::
-External JavaScripts
-::::::::::::::::::::::::::::::::::::::::-->
-
-<!--BootStrap JavaScript-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-<!------->
-<!--main.JS-->
-<script type="text/javascript" src="assets/js/main.js"></script>
-<!------->
-
-<!-- font SolariDisplay -->
-<script>
-
-	'use strict'
-
-	var display;
-
-	window.requestAnimationFrame = window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame;
-
-	window.addEventListener( 'load', function() {
-
-		display = new CTR.SolariBoard( {
-			container: container,
-			format: [
-				CTR.SOLARIVALUES.letter,
-				CTR.SOLARIVALUES.letter,
-				CTR.SOLARIVALUES.letter,
-				CTR.SOLARIVALUES.letter,
-				CTR.SOLARIVALUES.letter,
-				CTR.SOLARIVALUES.letter,
-				CTR.SOLARIVALUES.letter,
-				CTR.SOLARIVALUES.letter,
-				CTR.SOLARIVALUES.letter,
-				CTR.SOLARIVALUES.letter,
-				CTR.SOLARIVALUES.letter
-			 ],
-			segmentWidth: 30,
-			segmentHeight: 40,
-			fontSize: 20
-		} );
-
-		display.setContent( 'TRAIN TIMER' );
-
-	}, false );
-
-
-	</script>
-
 </body>
+
 </html>

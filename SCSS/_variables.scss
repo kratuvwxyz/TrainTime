@@ -1,0 +1,39 @@
+/*  COLORS
+$white: 255, 255, 255;
+$light-gray: 226, 225, 223;
+$gray: 105, 108, 109;
+$dark-gray: 60, 58, 72;
+$dark: 36, 41, 44;
+
+$primary-color: 0, 51, 85;
+$secondary-red: 230, 68, 72;
+$secondary-blue: 48, 170,179;
+$light-yellow: 234, 178, 68;
+$light-blue: 137, 197, 199;
+ */
+
+
+$white: #ffffff;
+$light-gray: #E2E1DF;
+$gray: #696C6D;
+$dark-gray: #3C3A48;
+$dark: #24292C;
+
+$primary-color: #003355;
+$secondary-red: #E64448;
+$secondary-blue: #30AAB3;
+$light-yellow: #EAB244;
+$light-blue: #89C5C7;
+
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$merri: 'Merriweather', serif;
+$mont: 'Montserrat', sans-serif;
+
+$font-weights: (
+    'regular': 400,
+    'bold': 700
+);
