@@ -20,8 +20,6 @@
     <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
     <!-- Moment.js Reference -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-    <!-- Solari Board JS for flipboard letters -->
-    <script src="assets/js/SolariBoard.min.js"></script>
     <!-- React -->
     <script src="https://unpkg.com/react@16.7.0/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"></script>
@@ -31,8 +29,6 @@
      -->
     <!-- Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="" crossorigin=""> -->
-    <!-- Solari Board CSS -->
-    <link rel="stylesheet" href="assets/css/SolariBoard.css" type="text/css">
     <!-- SASS Generates CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
 
@@ -52,52 +48,9 @@
         <p>POWREDED BY <a href="http://desaign.studio" target="_blank" rel="noopener noreferrer">DESAIGN.STUDIO</a></p>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="" crossorigin=""></script>   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="" crossorigin=""></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="" crossorigin=""></script>
- -->
     <!-- Developer JavaScript -->
     <script src="assets/js/main.js"></script>
 
-    <!-- font SolariDisplay -->
-    <script>
-
-        'use strict'
-
-        var display;
-
-        window.requestAnimationFrame = window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame;
-
-        window.addEventListener('load', function () {
-
-            display = new CTR.SolariBoard({
-                container: container,
-                format: [
-                    CTR.SOLARIVALUES.letter,
-                    CTR.SOLARIVALUES.letter,
-                    CTR.SOLARIVALUES.letter,
-                    CTR.SOLARIVALUES.letter,
-                    CTR.SOLARIVALUES.letter,
-                    CTR.SOLARIVALUES.letter,
-                    CTR.SOLARIVALUES.letter,
-                    CTR.SOLARIVALUES.letter,
-                    CTR.SOLARIVALUES.letter,
-                    CTR.SOLARIVALUES.letter,
-                    CTR.SOLARIVALUES.letter
-                ],
-                segmentWidth: 40,
-                segmentHeight: 40,
-                fontSize: 40
-            });
-
-            display.setContent('TRAIN TIMER');
-
-        }, false);
-
-
-    </script>
     <script type="text/babel">
 
         const App = () => (
@@ -109,11 +62,11 @@
 						<table className="table table-hover" id="train-table">
 							<thead>
 								<tr>
-									<th>Train Name</th>
-									<th>Destination</th>
-									<th>Frequency (min)</th>
-									<th>Next Arrival</th>
-									<th>Minutes Away</th>
+									<th>TRAIN</th>
+									<th>DEST.</th>
+									<th>FREQ.</th>
+									<th>ARRIV.</th>
+									<th>AWAY</th>
 								</tr>
 							</thead>
 							<tbody>

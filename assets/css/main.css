@@ -83,6 +83,47 @@ body div {
   font-weight: 700;
 }
 
+.card-body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card-body table {
+  width: 100%;
+}
+
+.card-body table th {
+  height: 50px;
+  background-color: #003355;
+  color: #EAB244;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #89C5C7;
+}
+
+.card-body table th:first-child {
+  padding-left: 20px;
+}
+
+.card-body table tr {
+  background-color: #30AAB3;
+  color: #003355;
+  font-weight: 700;
+  border-bottom: 1px solid #207177;
+}
+
+.card-body table tr:nth-child(even) {
+  background-color: #2b979f;
+}
+
+.card-body table tr td {
+  padding: 10px;
+}
+
+.card-body table tr td:first-child {
+  padding-left: 20px;
+}
+
 .footer {
   font-weight: 700;
   background-color: #3C3A48;

@@ -35,6 +35,50 @@ body {
     
 }
 
+.card-body {
+    width: 80%;
+    margin: 0 auto;
+
+    table {
+        width: 100%;
+        
+        th {
+            height: 50px;
+            background-color: $primary-color;
+            color: $light-yellow;
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid $light-blue;
+        
+            &:first-child {
+                padding-left: 20px;
+            }
+        }
+        
+        tr {
+            background-color: $secondary-blue;
+            color: $primary-color;
+            font-weight: weight(bold);
+            border-bottom: 1px solid darken($secondary-blue, 15%);
+
+            &:nth-child(even) {
+                background-color: darken($secondary-blue, 5%);
+            }
+
+            td {
+                padding: 10px;
+
+                &:first-child {
+                    padding-left: 20px;
+                }
+            }
+
+        }
+    }
+
+
+}
+
 // Footer
 .footer {
     font-weight: weight(bold);
