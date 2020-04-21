@@ -2,26 +2,37 @@
 <html lang="en">
 
 <head>
+    <!-- 
+        Title
+     -->
     <title>Title</title>
-    <!-- Required meta tags -->
+    <!-- 
+        Required meta tags 
+    -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="" crossorigin=""> -->
-
-    <link rel="stylesheet" href="assets/css/SolariBoard.css" type="text/css">
-
+    <!-- 
+        JavaScript
+     -->
     <!--jQuery-->
     <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="" crossorigin=""></script>
-
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
     <!-- Moment.js Reference -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-
-    <script src="assets/js/SolariBoard.min.js"></script>
-
+    <!-- Solari Board JS for flipboard letters -->
+    <!-- <script src="assets/js/SolariBoard.min.js"></script> -->
+    <!-- React -->
+    <script src="https://unpkg.com/react@16.7.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- 
+        CSS
+     -->
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="" crossorigin=""> -->
+    <!-- Solari Board CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/SolariBoard.css" type="text/css"> -->
     <!-- SASS Generates CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
 
@@ -36,7 +47,7 @@
             <div id="container"></div>
         </div>
     </div>
-    <div class="main"></div>
+    <div id="root" class="main"></div>
     <div class="footer">
         <p>POWREDED BY <a href="http://desaign.studio" target="_blank" rel="noopener noreferrer">DESAIGN.STUDIO</a></p>
     </div>
@@ -51,7 +62,7 @@
     <script src="assets/js/main.js"></script>
 
     <!-- font SolariDisplay -->
-    <script>
+    <!-- <script>
 
         'use strict'
 
@@ -81,13 +92,28 @@
                 fontSize: 40
             });
 
-            display.setContent('TRAIN TIMER');
+            display.setContent('');
 
         }, false);
 
 
-    </script>
+    </script> -->
+    <script type="text/babel">
 
+        const App = () => (
+            <div>
+                <h3 class="card-title">
+                    Current Train <strong>Tracker</strong>
+                </h3>
+            </div>
+        );
+
+
+        ReactDOM.render(
+            <App />,
+            document.getElementById('root')
+        );
+    </script>
 </body>
 
 </html>

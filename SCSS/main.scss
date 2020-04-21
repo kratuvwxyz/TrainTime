@@ -7,13 +7,31 @@ body {
     background-color: $light-blue;
     font-family: $mont;
     font-weight: weight(regular);
+    font-size: fontSize(body);
     letter-spacing: 1px;
+
+    div {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 // Header
 .header {
     padding: 40px;
     background-color: $secondary-blue;
+}
+
+// Main
+.card-title {
+    font-family: $mont;
+    font-weight: weight(regular);
+    font-size: 2rem;
+
+    strong {
+        font-weight: weight(bold);
+    }
+    
 }
 
 // Footer

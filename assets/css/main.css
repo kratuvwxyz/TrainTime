@@ -52,30 +52,34 @@ table {
 }
 
 /* End of Resets */
-/*  COLORS
-$white: 255, 255, 255;
-$light-gray: 226, 225, 223;
-$gray: 105, 108, 109;
-$dark-gray: 60, 58, 72;
-$dark: 36, 41, 44;
-
-$primary-color: 0, 51, 85;
-$secondary-red: 230, 68, 72;
-$secondary-blue: 48, 170,179;
-$light-yellow: 234, 178, 68;
-$light-blue: 137, 197, 199;
- */
+/*  COLORS */
 /* FONTS */
 body {
   background-color: #89C5C7;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  font-size: 16px;
   letter-spacing: 1px;
+}
+
+body div {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header {
   padding: 40px;
   background-color: #30AAB3;
+}
+
+.card-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.card-title strong {
+  font-weight: 700;
 }
 
 .footer {
