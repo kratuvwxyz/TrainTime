@@ -86,6 +86,7 @@ body div {
 .card-body {
   width: 80%;
   margin: 0 auto;
+  overflow-x: auto;
 }
 
 .card-body table {
