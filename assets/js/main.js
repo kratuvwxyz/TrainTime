@@ -6,7 +6,7 @@ function currentTime() {
 }
 
 //Initialize Firebase
-var config = {
+const config = {
     apiKey: "AIzaSyCUtBavexVKCdgC6lu1qLHvL8xqoxNTaz8",
     authDomain: "anytimeistraintime-05192018.firebaseapp.com",
     databaseURL: "https://anytimeistraintime-05192018.firebaseio.com",
@@ -16,28 +16,28 @@ var config = {
 };
 firebase.initializeApp(config);
 //database triggered via firebase
-var database = firebase.database();
+let database = firebase.database();
 
-//Create Firebase event for adding train to the database and a row in the html when a user adds an entry
-
-
+// calling database for getting stored information from Firebase
 database.ref().on("child_added", function (res, prevChildKey) {
+    // res = response from Firebase
+
+    let firstTimeConverted = moment(res.val().firstTrain, "HH:mm").subtract(1, "years");
+    let diffTime = moment().diff(moment(firstTimeConverted), "minutes");
+    let tRemainder = diffTime % res.val().frequency;
+    let tMinTillTrain = res.val().frequency - tRemainder;
+    let nextTrain = moment().add(tMinTillTrain, "minutes");
 
 
-    //store everything into a variable
-    var trainName3 = res.val().name;
-    var trainDestination3 = res.val().destination;
-    var trainFirstTrain3 = res.val().firstTrain;
-    var trainFrequency3 = res.val().frequency;
-
-    var firstTimeConverted = moment(trainFirstTrain3, "HH:mm").subtract(1, "years");
-    var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
-    var tRemainder = diffTime % trainFrequency3;
-    var tMinTillTrain = trainFrequency3 - tRemainder;
-    var nextTrain = moment().add(tMinTillTrain, "minutes");
-
-    //Add each train's data into the table
-    $("#train-table > tbody").append("<tr><td>" + trainName3 + "</td><td>" + trainDestination3 + "</td><td>" + trainFrequency3 + "</td><td>" + moment(nextTrain).format("hh:mm") + "</td><td>" + tMinTillTrain + "</td></tr>");
+    $("#train-table > tbody").append(`
+        <tr>
+            <td>${res.val().name}</td>
+            <td>${res.val().destination}</td>
+            <td>${res.val().firstTrain}</td>
+            <td>${res.val().frequency}</td>
+            <td>${tMinTillTrain}</td>
+        </tr>
+    `);
     
 
 });
