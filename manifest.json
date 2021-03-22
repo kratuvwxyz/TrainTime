@@ -1,0 +1,33 @@
+{
+    "name": "... by Desaign Studio",
+    "short_name": "...",
+    "icons": [
+        {
+            "src": "https://desaign.app/clients/cli/images/1x/blue.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "https://desaign.app/clients/cli/images/1x/blue.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "https://desaign.app/clients/cli/images/1x/blue.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "https://desaign.app/clients/cli/images/1x/blue.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "./index.html?homescreen=1",
+    "default_locale": "en",
+    "display": "standalone",
+    "background_color": "#3E4EB8",
+    "theme_color": "#003355",
+    "manifest_version": 2,
+    "version": "..."
+}
