@@ -41,10 +41,10 @@
     <!-- ! -->
     <!--basic page needs-->
     <meta name="author" content="Desaign Studio" />
-    <meta name="description" content="... by Desaign Studio" />
-    <meta name="keywords" content="..., Desaign, Studio, Digital, Creative, Agency" />
+    <meta name="description" content="Train Timer by Desaign Studio" />
+    <meta name="keywords" content="Train Timer, Desaign, Studio, Digital, Creative, Agency" />
 
-    <title>... | Desaign Studio</title>
+    <title>Train Timer | Desaign Studio</title>
 
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no" />
@@ -54,13 +54,13 @@
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="application-name" content="... by Desaign Studio" />
+    <meta name="application-name" content="Train Timer by Desaign Studio" />
     <link rel="icon" sizes="192x192" href="https://desaign.app/clients/cli/images/1x/favicon.ico" />
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="... by Desaign Studio" />
+    <meta name="apple-mobile-web-app-title" content="Train Timer by Desaign Studio" />
     <link rel="apple-touch-icon" href="https://desaign.app/clients/cli/images/1x/black.png" />
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
@@ -75,7 +75,8 @@
     <!-- Robots -->
     <!-- <meta name="robots" content="noindex, nofollow" /> -->
 
-    <!-- Google Fonts -->
+    <!-- Font Awesome Fonts -->
+    <script src="https://desaign.app/clients/cli/js/fontawesome5.js" type="text/javascript"></script>
 
     <!-- JQuery -->
     <script src="https://desaign.app/clients/cli/js/jquery.js" type="text/javascript"></script>
@@ -84,24 +85,64 @@
     <link rel="stylesheet" href="https://desaign.app/clients/cli/css/bootstrap.css" />
     <script src="https://desaign.app/clients/cli/js/bootstrap.js" type="text/javascript"></script>
 
+    <!-- Flip Clock -->
+    <link rel="stylesheet" href="./compiled/flipclock.css" />
+    <script src="./compiled/flipclock.js" type="text/javascript"></script>
+
+    <!-- Solari Board -->
+    <link rel="stylesheet" href="./assets/css/SolariBoard.css" />
+    <script src="./assets/js/SolariBoard.min.js" type="text/javascript"></script>
+
     <!-- Developer CSS -->
     <link rel="stylesheet" href="./assets/css/main.css" />
-    
   </head>
-  
-  <body>
-    <div class="mainContainer">
 
+  <body>
+    <div class="mainContainer p-0">
+      <div class="row">
+        <div class="col">
+          <div class="container-fluid p-0">
+            <div class="row">
+              <div class="col bg-texture py-3">
+                <h1 class="text-center fs-1 fw-bold text-uppercase lh-lg font-monospace text-light">
+                  Train Information
+                  <span class=""
+                    ><button class="btn btn-outline-dark btn-lg" style="position: relative; bottom: 5px">Add New <i class="fas fa-train"></i></button>
+                  </span>
+                </h1>
+                <div class="clock" style="margin: 2em; display: flex; justify-content: center"></div>
+              </div>
+            </div>
+            <div class="row m-2 border-top border-3 border-dark">
+              <div class="col p-2">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Train</th>
+                      <th scope="col">From</th>
+                      <th scope="col">Destination</th>
+                      <th scope="col">Time</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Platform</th>
+                    </tr>
+                  </thead>
+                  <tbody class="t1">
+                    
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
+
     <!-- Footer -->
-    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark mt-5 ps-3" >
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark mt-5 ps-3">
       <a class="navbar-brand" href="https://desaign.app" style="font-size: 1rem !important">POWERED BY <span class="text-warning">DESAIGN.STUDIO</span></a>
     </nav>
-    
+
     <!-- Developer JavaScripts -->
-    <script src="" type="text/javascript"></script>
-    
+    <script src="./assets/js/script.js" type="text/javascript"></script>
   </body>
-  
 </html>

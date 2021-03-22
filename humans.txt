@@ -22,19 +22,19 @@
                             
 /* SITE */
 
-    Version: ...
+    Version: 2103221612
 
                             
-    Last update: ...
+    Last update: 21/03/22
 
                                 
-    Standards: ...
+    Standards: HTML5, CSS3, JavaScript, SCSS
 
                                 
-    Components: ...
+    Components: JQuery, Bootstrap, Flip Clock, Solari Board
 
                                 
-    Software: ...
+    Software: Visual Studio Code Editor
 
 
     Version Control: GitHub

@@ -1,19 +1,19 @@
-## Project title
+## Train Timer
 
-Descriptions
+Train Information Solari Board. 
 
 ### Version
 
-- **...**
-- Last Update: ...
+- **2103221612**
+- Last Update: 21/03/22
 
 ### Standards
 
-- ...
+- HTML5, CSS3, JavaScript, SCSS
 
 ### Components
 
-- ...
+- JQuery, Bootstrap, Flip Clock, Solari Board, Firebase Database
 
 ### Software
 

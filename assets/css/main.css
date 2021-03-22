@@ -55,10 +55,21 @@ table {
 /*  COLORS */
 /* FONTS */
 body {
-  background-color: #89C5C7;
+  background-color: #3C3A48;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 1px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%696C6D' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.bg-texture {
+  background-color: #3C3A48;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%696C6D' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+th {
+  font-size: 1vw;
+  color: #696C6D;
 }
 /*# sourceMappingURL=main.css.map */
