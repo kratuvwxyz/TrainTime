@@ -1,25 +1,34 @@
-## Train Timer
+## Train Informaiton on Solari Board by Desaign Studio
 
-Train Information Solari Board. 
+Solari board style train information. Using Firebase to store data and Moment JS to update time. Form to add new train information. Click cloumn title to filter or using search to sort by destination.
+
+<img src="./SS1.png" alt="Screen Shot" width="500">
 
 ### Version
 
 - **2103221612**
-- Last Update: 21/03/22
+✔ Last Update @done (March 23rd 2021, 15:38)
 
-### Standards
+### Framework
 
 - HTML5, CSS3, JavaScript, SCSS
 
-### Components
+### Build With
 
-- JQuery, Bootstrap, Flip Clock, Solari Board, Firebase Database
+- JQuery, Bootstrap, Flip Clock, Solari Board, Firebase Database, Google Fonts, SVG, Font Awesome Icons
 
 ### Software
 
 - Visual Studio Code Editor
 - Github for versioning
 
+### CONTRIBUTE
+
+- A [contributing guideline](https://github.com/kratuvwxyz/CONTRIBUTE) available.
+
+### LICENSE
+
+- [MIT](https://github.com/kratuvwxyz/LICENSE) © 2021 Kratu Desai, DESAIGN LLC.
 
 ## CONTACT
 

@@ -1,6 +1,6 @@
 {
-    "name": "... by Desaign Studio",
-    "short_name": "...",
+    "name": "Train Informaiton on Solari Board by Desaign Studio",
+    "short_name": "Train Timer",
     "icons": [
         {
             "src": "https://desaign.app/clients/cli/images/1x/blue.png",
@@ -29,5 +29,5 @@
     "background_color": "#3E4EB8",
     "theme_color": "#003355",
     "manifest_version": 2,
-    "version": "..."
+    "version": "2103221612"
 }

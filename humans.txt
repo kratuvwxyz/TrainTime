@@ -22,22 +22,31 @@
                             
 /* SITE */
 
-    Version: 2103221612
+Version:
 
-                            
-    Last update: 21/03/22
+    - 2103221612
+    ✔ Last Update @done (March 23rd 2021, 15:44)
 
-                                
-    Standards: HTML5, CSS3, JavaScript, SCSS
+Framework:
 
-                                
-    Components: JQuery, Bootstrap, Flip Clock, Solari Board
+    - HTML5, CSS3, JavaScript, SCSS
 
-                                
-    Software: Visual Studio Code Editor
+Built With:
 
+    - JQuery, Bootstrap, Flip Clock, Solari Board, Firebase Database, Google Fonts, SVG, Font Awesome Icons
 
-    Version Control: GitHub
+Software:
+
+    - Visual Studio Code Editor
+    - Github for versioning
+
+Contributors:
+
+    - COC : https://github.com/kratuvwxyz/CONTRIBUTE
+
+License:
+
+    - MIT License : https://github.com/kratuvwxyz/LICENSE
 
 
 /* POWERED BY */

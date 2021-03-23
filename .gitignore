@@ -1,2 +1,13 @@
-0HN0
+# Local development
+*.env
+*.dev
 .DS_Store
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+#Test
+0HN0/
+# find . -type f -name '._*' -delete
+# git rm -r --cached .
